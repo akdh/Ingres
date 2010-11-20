@@ -1878,9 +1878,10 @@
 #define ADFI_1692_GEOM_S_FROM_WKB       (ADI_FI_ID)1692 /* geomfromwkb(bin,int) */
 #define ADFI_1693_NUMPOINTS             (ADI_FI_ID)1693 /* NUMPOINTS(linestring) */
 #define ADFI_1694_GEOM_AS_TEXT_RAW      (ADI_FI_ID)1694 /* AsTextRaw(geom) */
-#define ADFI_1695_GEOM_AS_TEXT_ROUND    (ADI_FI_ID)1695 /* AsTextRound(geom, int) */
+#define ADFI_1695_GEOM_AS_TEXT_ROUND    (ADI_FI_ID)1695 /* AsTextRound(geom) */
 #define ADFI_1696_TRANSFORM             (ADI_FI_ID)1696 /* transform(geom,srid) */
 #define ADFI_1697_GEOMC_FROM_TEXT       (ADI_FI_ID)1697 /* geomcollfromtext(text) */
 #define ADFI_1698_GEOMC_FROM_WKB        (ADI_FI_ID)1698 /* geomcollfromwkb(bin) */
 #define ADFI_1699_GEOMC_S_FROM_TEXT     (ADI_FI_ID)1699 /* geomcollfromtext(text, int) */
 #define ADFI_1700_GEOMC_S_FROM_WKB      (ADI_FI_ID)1700 /* geomcollfromwkb(bin,int) */
+#define ADFI_1701_GEOM_I_AS_TEXT_ROUND  (ADI_FI_ID)1701 /* AsTextRound(geom, int) */

@@ -2530,6 +2530,21 @@ DB_DATA_VALUE   *dv_out)
 DB_STATUS
 adu_geom_asTextRound(
 ADF_CB          *adf_scb,
+DB_DATA_VALUE   *dv_in,
+DB_DATA_VALUE   *dv_out)
+{
+#ifndef _WITH_GEO
+    return (adu_error(adf_scb, E_AD5606_SPATIAL_NOT_SUPPORTED, 2, 0));
+#else
+    i4 precision = 0;
+
+    return geom_to_text(adf_scb, dv_in, dv_out, FALSE, precision);
+#endif
+}
+
+DB_STATUS
+adu_geom_precision_asTextRound(
+ADF_CB          *adf_scb,
 DB_DATA_VALUE   *dv1,
 DB_DATA_VALUE   *dv2,
 DB_DATA_VALUE   *dv_out)

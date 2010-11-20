@@ -761,8 +761,10 @@ FUNC_EXTERN ADU_NORM2_FUNC adu_geometrycollection_srid_fromWKB;
 FUNC_EXTERN ADU_NORM1_FUNC adu_geom_asText; /* Convert a geometry to WKT. */
 FUNC_EXTERN ADU_NORM1_FUNC adu_geom_asTextRaw; /* Convert a geometry to WKT
                                                   *without* trim/rounding */
-FUNC_EXTERN ADU_NORM2_FUNC adu_geom_asTextRound; /* Convert a geometry to WKT
-                                                    with specified rounding */
+FUNC_EXTERN ADU_NORM1_FUNC adu_geom_asTextRound; /* Convert a geometry to WKT
+                                                    with default rounding */
+FUNC_EXTERN ADU_NORM2_FUNC adu_geom_precision_asTextRound; /* Convert a geometry to WKT
+                                                              with specified rounding */
 FUNC_EXTERN ADU_NORM1_FUNC adu_geom_asBinary; /* Convert a geometry to WKB. */
 
 FUNC_EXTERN ADU_NORM2_FUNC adu_geom_nbr; /* Extract an nbr for rtree indexing */
